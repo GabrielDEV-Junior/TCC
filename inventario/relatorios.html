@@ -1,0 +1,46 @@
+<!-- Mesmo layout -->
+<span class="navbar-brand mb-0 h1">Relatórios</span>
+<div class="container">
+  <h4 class="mb-4">Filtros</h4>
+  <form class="row g-3">
+    <div class="col-md-4">
+      <label for="filtro-categoria" class="form-label">Categoria</label>
+      <select class="form-select" id="filtro-categoria">
+        <option selected>Todos</option>
+        <option>Informática</option>
+        <option>Veículo</option>
+        <option>Imóvel</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="filtro-data" class="form-label">Período</label>
+      <input type="month" class="form-control" id="filtro-data">
+    </div>
+    <div class="col-md-4 d-flex align-items-end">
+      <button type="submit" class="btn btn-primary">Gerar Relatório</button>
+    </div>
+  </form>
+
+  <hr class="my-4">
+
+  <h4>Resultados</h4>
+  <table class="table table-striped mt-3">
+    <thead>
+      <tr>
+        <th>Ativo</th>
+        <th>Categoria</th>
+        <th>Movimentação</th>
+        <th>Data</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Notebook Dell</td>
+        <td>Informática</td>
+        <td>Transferência</td>
+        <td>2025-04-06</td>
+      </tr>
+      <!-- outros registros -->
+    </tbody>
+  </table>
+</div>

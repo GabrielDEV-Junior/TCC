@@ -1,0 +1,116 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-2px);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* BOTÃO - ESCOLHA A COR CONFORME A PÁGINA */
+
+/* Azul - Login, Cadastro Ativo (Padrão) */
+form input[type="submit"] {
+    background: #007BFF;
+}
+
+form input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Verde - Cadastro de Usuário */
+/*
+form input[type="submit"] {
+    background: #28a745;
+}
+form input[type="submit"]:hover {
+    background: #218838;
+}
+*/
+
+/* Ciano - Cadastro de Ativo (alternativa) */
+/*
+form input[type="submit"] {
+    background: #17a2b8;
+}
+form input[type="submit"]:hover {
+    background: #117a8b;
+}
+*/
+
+/* Laranja - Movimentar Ativo */
+/*
+form input[type="submit"] {
+    background: #fd7e14;
+}
+form input[type="submit"]:hover {
+    background: #e8590c;
+}
+*/
+
+/* Roxo - Relatórios */
+/*
+form input[type="submit"] {
+    background: #6f42c1;
+}
+form input[type="submit"]:hover {
+    background: #563d7c;
+}
+*/
+
+form input[type="submit"] {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

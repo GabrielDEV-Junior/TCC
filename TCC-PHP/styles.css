@@ -1,116 +1,150 @@
 /* Reset básico */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    opacity: 0.8;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f0f2f5;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
     color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    padding: 20px;
 }
 
+/* Container central */
 .container {
-    width: 100%;
-    max-width: 400px;
-    background: #ffffff;
+    max-width: 700px;
+    margin: 50px auto;
+    background: #fff;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.container:hover {
-    transform: translateY(-2px);
-}
-
-h2 {
+/* Títulos */
+h1, h2, h3 {
     margin-bottom: 20px;
-    font-size: 24px;
-    text-align: center;
-    color: #333;
+    color: #007bff;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
+/* Botões */
+button, .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 5px 0;
 }
 
-/* BOTÃO - ESCOLHA A COR CONFORME A PÁGINA */
-
-/* Azul - Login, Cadastro Ativo (Padrão) */
-form input[type="submit"] {
-    background: #007BFF;
-}
-
-form input[type="submit"]:hover {
+button:hover, .btn:hover {
     background: #0056b3;
 }
 
-/* Verde - Cadastro de Usuário */
-/*
-form input[type="submit"] {
-    background: #28a745;
-}
-form input[type="submit"]:hover {
-    background: #218838;
-}
-*/
-
-/* Ciano - Cadastro de Ativo (alternativa) */
-/*
-form input[type="submit"] {
-    background: #17a2b8;
-}
-form input[type="submit"]:hover {
-    background: #117a8b;
-}
-*/
-
-/* Laranja - Movimentar Ativo */
-/*
-form input[type="submit"] {
-    background: #fd7e14;
-}
-form input[type="submit"]:hover {
-    background: #e8590c;
-}
-*/
-
-/* Roxo - Relatórios */
-/*
-form input[type="submit"] {
-    background: #6f42c1;
-}
-form input[type="submit"]:hover {
-    background: #563d7c;
-}
-*/
-
-form input[type="submit"] {
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s ease;
+/* Inputs e textarea */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Links */
 a {
-    color: #007BFF;
+    color: #007bff;
     text-decoration: none;
-    display: inline-block;
-    margin-top: 10px;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Alertas */
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
 }

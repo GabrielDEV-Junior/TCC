@@ -16,7 +16,7 @@ $ativos = $pdo->query('SELECT * FROM ativos ORDER BY id DESC LIMIT 5')->fetchAll
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Painel de Controle</title>
+    <title>Painel de Controlaaae</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
